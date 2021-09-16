@@ -4,15 +4,29 @@ using System.Text;
 
 namespace SpectatorProject.Model
 {
+    /// <summary>
+    /// Státusz enum
+    /// </summary>
+    enum Status
+    {
+        Inactive,
+        Active,
+        Expired
+    }
+    /// <summary>
+    /// Név osztály
+    /// </summary>
     class Name
     {
-        enum Status
+        private string firstName;
+        private string lastName;
+
+        public Name(string firstName, string lastName)
         {
-            Inactive,
-            Active,
-            Expired
+            this.firstName = firstName;
+            this.lastName = lastName;
         }
-
-
     }
-}
+
+        
+    }
