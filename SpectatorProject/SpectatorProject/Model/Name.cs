@@ -26,6 +26,22 @@ namespace SpectatorProject.Model
             this.firstName = firstName;
             this.lastName = lastName;
         }
+
+        public string Fullname
+        {
+            get
+            {
+                return lastName + " " + firstName;
+            }
+        }
+        public string LastName { get => lastName; set => lastName = value; }
+        public string FirstName { get => firstName; set => firstName = value; }
+
+        //ToString metódus
+        public override string ToString()
+        {
+            return "Néző neve: " + Fullname;
+        }
     }
 
         
