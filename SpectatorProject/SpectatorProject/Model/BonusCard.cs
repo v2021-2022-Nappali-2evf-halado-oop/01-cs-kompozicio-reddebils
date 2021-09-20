@@ -34,6 +34,23 @@ namespace SpectatorProject.Model
 
             }
         }
+
+        public override string ToString()
+        {
+
+            string result = "\nBonusz kártya adatai:";
+            result += "\nBonusz kártya kártyaszáma: " + cardNumber;
+            result += "\nBonusz kártya egyenlege: " + balance;
+            if (Usable)
+            {
+                result += "\nA bonusz kártya használható";
+            }
+            else
+            {
+                result += "\nA bonusz kártya nem használható";
+            }
+            return result;
+        }
     }
 
 
